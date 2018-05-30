@@ -1,0 +1,16 @@
+Chapter 3 Functions
+
+review functions and side effects section:
+  What are:
+    side effects
+    pure Functions
+
+  Recursion
+    What is it and what is recursive thinking.
+    How does recursion affect performance of programs.
+
+  Closure
+    Better understand Closure
+
+  Call Stack
+    Better understand the call Stack

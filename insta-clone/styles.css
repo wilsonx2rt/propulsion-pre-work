@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: Roboto;
+}
+
+i {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+.nav-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 77px;
+  width: 100vw;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  background-color: white;
+  z-index: 1;
+}
+
+.flex-nav,
+#logo-box,
+#search-box,
+#icons-box {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-nav {
+  max-width: 1010px;
+  width: 100%;
+
+}
+
+#logo {
+  height: 40px;
+  border-left: solid black 1px;
+  padding-left: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#logo-box i{
+  font-size: 2em;
+}
+
+#search-box {
+  width: 215px;
+  height: 28px;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+#search-input {
+  border: none;
+  text-indent: 33%;
+}
+
+#search-input:focus {
+  outline: none;
+  text-indent: 1%;
+}
+
+#icons-box i {
+  font-size: 1.5em;
+  margin-left: 30px
+}
+
+.main {
+  max-width: 1010px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 130px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.card {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.card-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-header {
+  width: 614px;
+  background-color: #FFF;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.07);
+  padding: 10px;
+}
+
+.card-header img {
+  height: 30px;
+  border: 1px solid rgba(0,0,0,0.07);
+}
+
+.header-id {
+  padding-left: 10px;
+}
+
+.card img:not(.person-img) {
+  width: 614px;
+  align-items: center;
+  background-color: #FFF;
+  border: 1px solid rgba(0,0,0,0.07);
+  /* max-height: 614px; */
+}
+
+.card-icons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.card-icons i {
+  font-size: 1.25em;
+  margin-left: 25px;
+}
+
+.card-icons-right {
+  padding-right: 10px;
+}
+
+.card-footer {
+  background-color: #FFF;
+  width: 614px;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.07);
+  margin-top: -4px;
+}
+
+.footer-content {
+  padding: 10px;
+}
+
+.comments-div {
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+#comment {
+  border: none;
+  margin: 10px 0;
+}
+
+.side {
+  width: 100%;
+  padding-left: 40px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: sticky;
+  top: 100px;
+}
+
+.side-sticky {
+  width: 100%;
+}
+
+.person-img {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.user-element {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+#gray-line {
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.user-details {
+  -ms-align-self: center;
+  align-self: center;
+  margin-left: 10px;
+}
+.user-id {
+  margin: 0;
+  font-weight: 600;
+}
+
+.user-name,
+.user-post-time {
+  margin: 0;
+  color: #999;
+}
+
+.stories {
+  max-height: 260px;
+  overflow: scroll;
+}
+
+.stories-heading{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stories-heading :first-child {
+  color: #999;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.stories-heading :last-child {
+  color: #262626;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.story-img {
+  border: solid coral 2px;
+  padding: 2px;
+}
+
+.footer-link,
+.not-instagram {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  text-decoration: none;
+}
+
+.not-instagram {
+  margin-top: 20px;
+}

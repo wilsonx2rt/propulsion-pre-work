@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Calculator</title>
+  </head>
+  <body>
+    <div>
+      <input id="first" type="number" name="" value="">
+      <input id="second" type="number" name="" value="">
+      <button type="button" name="button">Add them</button>
+    </div>
+    <div id="result"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('button').on('click', function () {
+          var first = $('#first').val();
+          var second = $('#second').val();
+          var addition = Number(first) + Number(second);
+          $('#result').text(addition);
+        });
+    </script>
+  </body>
+</html>

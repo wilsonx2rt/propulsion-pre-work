@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgba(0,0,0,0.85);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(0,0,0,0.87);
+}
+
+.flex-wrapper {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-container {
+  font-family: arial, sans-serif;
+  font-weight: 400;
+  height: 50px;
+  font-size: 13px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+  -ms-align-items: center;
+  align-items: center;
+}
+.top-container > * {
+  margin-left: 18px;
+}
+.top-container img   {
+  height: 35px;
+  width: ;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.top-container i {
+  font-size: 1.5em;
+  color: #666666;
+}
+
+.top-container i:hover {
+  color: rgba(0,0,0,0.85);
+}
+
+.center-container {
+  -ms-align-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+#logo {
+  height: 92px;
+  margin-bottom: 40px;
+}
+
+input {
+  min-width: 584px;
+  height: 44px;
+  text-indent: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  border: none;
+}
+#search {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+#mic {
+  height: 20px;
+  position: relative;
+  right: 30px;
+}
+
+.center-container button {
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    background-color: #f8f8f8;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 30px 4px;
+    min-width: 54px;
+    padding: 13px 16px;
+    text-align: center;
+}
+
+.center-container button:hover {
+  color: #222222;
+  border: 1px solid #f2f2f9;
+}
+
+.offered {
+  color: #222222;
+  font-size: 13px;
+  font-family: arial;
+}
+
+.offered > * {
+  margin-left: 5px;
+}
+
+.offered a {
+  color: blue;
+}
+
+.bottom-row {
+  color:  #666666;
+  background-color: #f8f8f8;
+  height: 35px;
+  padding: 0 20px;
+  font-family: arial, sans-serif;
+  font-weight: 400;
+  height: 50px;
+  font-size: 13px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.bottom-row a {
+  margin-right: 10px
+}
+
+#swiss {
+  border-bottom: #BDBDBD solid 1px;
+}
